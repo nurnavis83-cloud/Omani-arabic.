@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omani Arabic - Nurnovi</title>
+<style>
+body{margin:0;background:#f3f7f4;font-family:Arial,sans-serif;color:#173b2d}
+header{background:#12634d;color:white;padding:25px;text-align:center}
+main{padding:16px;max-width:600px;margin:auto}
+.card{background:white;padding:18px;margin:14px 0;border-radius:16px}
+h1{font-size:27px}
+.ar{font-size:30px;text-align:center;direction:rtl}
+.bn{text-align:center;font-size:20px;color:#12634d}
+button{background:#12634d;color:white;border:0;padding:12px;border-radius:10px;margin:5px}
+footer{text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>Omani Arabic</h1>
+<h2>عربي عُماني</h2>
+<p>ওমানি আঞ্চলিক আরবি শেখার অ্যাপ</p>
+</header>
+<main>
+<h2>আজকের আরবি শিক্ষা</h2>
+<div class="card">
+<div class="ar">زين</div>
+<div class="bn">জাইন</div>
+<p align="center">বাংলা অর্থ: ভালো</p>
+<button onclick="speak('زين')">🔊 শুনুন</button>
+</div>
+<div class="card">
+<div class="ar">وين؟</div>
+<div class="bn">ওয়াইন?</div>
+<p align="center">বাংলা অর্থ: কোথায়?</p>
+<button onclick="speak('وين')">🔊 শুনুন</button>
+</div>
+<div class="card">
+<div class="ar">شكراً</div>
+<div class="bn">শুকরান</div>
+<p align="center">বাংলা অর্থ: ধন্যবাদ</p>
+<button onclick="speak('شكراً')">🔊 শুনুন</button>
+</div>
+<div class="card">
+<div class="ar">شوي شوي</div>
+<div class="bn">শুয়াই শুয়াই</div>
+<p align="center">বাংলা অর্থ: আস্তে আস্তে</p>
+<button onclick="speak('شوي شوي')">🔊 শুনুন</button>
+</div>
+<div class="card" style="text-align:center">
+<h2>Created by Nurnovi</h2>
+<p>সন্দ্বীপ, চট্টগ্রাম, বাংলাদেশ 🇧🇩</p>
+</div>
+</main>
+<footer>Omani Arabic © Nurnovi</footer>
+<script>
+function speak(word){
+let s=new SpeechSynthesisUtterance(word);
+s.lang='ar';
+speechSynthesis.speak(s);
+}
+</script>
+</body>
+</html>
